@@ -3,6 +3,7 @@ html, body, *{
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -81,6 +82,11 @@ body{
     margin-top: 1rem;
 }
 
+.mainsection button a{
+    text-decoration: none;
+    color: black;
+}
+
 button:hover{
     cursor: pointer;
 }
@@ -99,7 +105,7 @@ button:hover{
 }
 
 .full-background{
-    background-color: #8C40DE;
+    
     width: 100%;
     display: flex;
     justify-content: center
@@ -114,9 +120,9 @@ button:hover{
 }
 
 .about h2{
-    font-size: 2rem;
-    color: #FFF;
+    font-size: 2.5rem;
     padding-top: 2rem;
+    color: #8C40DE;
 }
 
 
@@ -124,6 +130,75 @@ button:hover{
     width: 50%;
 }
 
+.mainabout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .abouttext{
-    
+    font-size: 1.5rem;
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.comofunc{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comofunc h2{
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    color: #8C40DE;
+}
+
+.hidden{
+    display: none;
+}
+
+.carousel img{
+    aspect-ratio: 16/9;
+    width: 70%;
+}
+.carousel{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel button{
+    border: none;
+    width: 5%;
+    font-size: 2rem;
+    padding: 10% 0;
+}
+
+.faq{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.faq h2{
+    font-size: 2.5rem;
+    color: #8C40DE;
+}
+
+.faq p{
+    padding: 1rem 0;
+    font-size: 1.5rem;
 }

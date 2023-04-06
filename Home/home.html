@@ -8,16 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./faq.css">
 
-    <title>Document</title>
+    <title>Li-Mao</title>
 </head>
 <body>
     <div class="container">
         <div class="navbar">
             <span>Li-Mão</span>
             <div class="cadastro">
-                <a href="#">Quero aprender!</a>
-                <a href="#">Login</a>                
+                <a href="./cadastro.html">Quero aprender!</a>
+                <a href="./login.html">Login</a>                
             </div>
         </div>
         <main>
@@ -25,7 +26,7 @@
                 <div class="mainsectiontext">
                     <h1>Seja bem-vindo</h1>
                     <p>Um jeito divertido e inovador <b>de aprender LIBRAS  </b> no conforto <b>de sua casa.</b></p>
-                    <button>Saiba mais!</button>
+                    <button><a href="#abouttext">Saiba mais!</a></button>
                     <span>Saiba mais!</span>
                 </div>
                 <img src="./limao 5 dedos no background.png" alt="Imagem principal Mascote">
@@ -37,13 +38,56 @@
                         <h2>O que eh Li-Mao?</h2>
                         <div class="mainabout">
                             <img src="./limao 5 dedos no background.png" alt="Mascote do sobre">
-                            <div class="abouttext">
-                                <p></p>
+                            <div id="abouttext" class="abouttext">
+                                <p>Olá!! Me chamo Li-Mão, sou uma plataforma de aprendizado de LIBRAS. Irei lhe dar uma Mãozinha em sua jornada de estudos dos sinais, com a realização de atividades divertidas e podendo reconhecer seus sinais utilizando sua propria camera. Venha aprender comigo!</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <div class="comofunc">
+                    <h2>Veja como funciona</h2>
+                    <div class="carousel">
+                        <button id="myBtn" class="botao"> < </button>
+                        <img id="img1" class="hidden" src="./pexels-cottonbro-studio-4065876.jpg" alt="">
+                        <img id="img2" class="hidden" src="./pexels-energepiccom-313690.jpg" alt="">
+                        <img id="img3" src="./pexels-hatice-baran-16037283.jpg" alt="">
+                        <button id="myBtnBack">></button>
+                    </div>
+                </div>
+                <div class="faq">
+                    <h2>FAQ - Perguntas Frequentes</h2>
+                    <p>Verifique se  sua dúvida se encontra entre as perguntas mais frequentes de nossos usuários </p>
+
+                    <ul id="acordeao">
+                        <li>
+                            <label for="first">Cadastro/Login<span>&#x3e</span></label>
+                            <input type="radio" name="accordion" id="first" checked>
+                            <div class="content">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur magnam alias similique veritatis ut tempore accusamus delectus nemo? Omnis nemo iusto doloribus nesciunt esse suscipit repellendus magnam! Eaque, exercitationem voluptatem!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="second">Método de ensino<span>&#x3e</span></label>
+                            <input type="radio" name="accordion" id="second">
+                            <div class="content">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur magnam alias similique veritatis ut tempore accusamus delectus nemo? Omnis nemo iusto doloribus nesciunt esse suscipit repellendus magnam! Eaque, exercitationem voluptatem!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="third">Certificados<span>&#x3e</span></label>
+                            <input type="radio" name="accordion" id="third">
+                            <div class="content">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur magnam alias similique veritatis ut tempore accusamus delectus nemo? Omnis nemo iusto doloribus nesciunt esse suscipit repellendus magnam! Eaque, exercitationem voluptatem!</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </main>
+
+        <script src="./home.js"></script>
+        
 </body>
 </html>

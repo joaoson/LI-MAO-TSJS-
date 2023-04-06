@@ -1,0 +1,118 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    background-color: rgba(209, 166, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    background-color: white;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar button{
+    border-top: none;
+    background-color: white;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;  
+    font-family: 'Poppins' , sans-serif;
+    text-align: left;
+    padding: 1rem 0;
+    padding-left: 5%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#loginBtn{
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    border-right: none;
+    text-align: right;
+    padding: 1rem 0;
+    padding-right: 5%;
+    border-radius: 0 10px 0 10px;
+}
+
+.cadastro{
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input{
+    border:none;
+    border-bottom: 3px black solid;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+}
+
+.register{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    padding: 4rem 0;
+}
+
+form{
+    width: 100%;
+}
+
+label{
+    font-weight: bold;
+}
+
+.loginpage{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    padding: 4rem 0;
+}
+
+.hidden{
+    display: none;
+}

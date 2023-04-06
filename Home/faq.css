@@ -1,0 +1,46 @@
+
+#acordeao{
+    margin: 100px auto;
+    width: 80%
+}
+
+#acordeao li{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background:#8C40DE;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#acordeao li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #FFF;
+}
+
+label span{
+    transform: rotate(90deg);
+    font-size: 34px;
+    color: #FFF;   
+}
+
+.content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s; 
+}
+
+#acordeao label + input[type="radio"]{
+    display: none;
+}
+
+#acordeao label + input[type="radio"]:checked + .content{
+    max-height: 400px;
+    color: #fff;
+}
