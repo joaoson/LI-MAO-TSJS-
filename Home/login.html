@@ -15,20 +15,30 @@
     <div class="container">
         <div class="navbar">
             <button id="registerBtn" class="cadastro">Cadastro</button>
-            <button id="loginBtn" class="login">Login</button>
+            <button id="loginBtn" class="login atual">Login</button>
         </div>
         <div id="registerDiv" class="register hidden">
             <form action="" method="post">
                 <label for="nome">Digite seu nome completo</label><br>
                 <input type="text" id="nome" name="nome"><br>
                 <label for="nascimento"> Digite sua data de nascimento</label><br>
-                <input type="number" id="nascimento" name="nascimento"><br>
+                <input type="number" id="nascimento" name="nascimento" placeholder="DD/MM/YYYY" ><br>
                 <label for="cpf"> Digite seu CPF</label><br>
-                <input type="number" id="cpf" name="cpf"><br>
+                <input type="number" id="cpf" name="cpf" placeholder="111.111.111-11"><br>
                 <label for="email">Email</label><br>
                 <input type="email" id="email" name="email"><br>
                 <label for="user">Nome de usuario</label><br>
                 <input type="text" id="user" name="user"><br>
+                <label for="senha"> Digite sua senha</label><br>
+                <input type="password" id="senha" name="senha"><br>
+                <label for="senhaRep"> Digite sua senha</label><br>
+                <input type="password" id="senhaRep" name="senhaRep"><br>
+                <div class="terms">
+                    <input type="checkbox">
+                    <p>Eu aceito os <a href="./terms.html" target="_blank">termos e condições</a></p>
+                </div>
+                
+                <input type="submit" class="submit" name="submit" value="Enviar"><br>
             </form>
         </div>
         <div id="loginDiv" class="loginpage">
@@ -37,6 +47,13 @@
                 <input type="email" id="emailLog" name="emailLog"><br>
                 <label for="senhaLog"> Digite sua senha</label><br>
                 <input type="password" id="senhaLog" name="senhaLog"><br>
+                <input type="submit" class="submit" name="submit" value="Logar"><br>
+                <div class="socialmedia">
+                    <p>Ou faça login rapidamente com as opções abaixo</p>
+                    <img src="./assets/apple.png" alt="appleLogin">
+                    <img src="./assets/google.png" alt="googleLogin">
+                    <img src="./assets/facebook.png" alt="facebookLogin">
+                </div>
             </form>
         </div>
     </div>

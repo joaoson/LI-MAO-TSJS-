@@ -19,6 +19,8 @@ function changeLogin(){
     if(classLogin == "hidden"){
         Register.classList.add("hidden");
         Login.classList.remove("hidden");
+        botaoCadastro.classList.remove("atual");
+        botaoLogin.classList.add("atual");
     }
     else{
         console.log("ja esta aparente")
@@ -36,6 +38,8 @@ function changeRegister(){
     if(classRegister == "hidden"){
         Login.classList.add("hidden");
         Register.classList.remove("hidden");
+        botaoCadastro.classList.add("atual");
+        botaoLogin.classList.remove("atual");
     }
     else{
         console.log("ja esta aparente")

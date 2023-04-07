@@ -5,7 +5,7 @@ body, html{
     font-family: 'Poppins' , sans-serif;
 }
 body{
-    background-color: rgba(209, 166, 255, 1);
+    background: url(./assets/pattern.jpeg) center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,7 @@ body{
     flex-direction: column;
     margin-top: 2rem;
     border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 .navbar{
@@ -34,13 +35,13 @@ body{
     border-top: none;
     background-color: white;
     width: 50%;
-    border-radius: 10px;
     font-size: 1.5rem;
     font-weight: bold;  
     font-family: 'Poppins' , sans-serif;
     text-align: left;
     padding: 1rem 0;
     padding-left: 5%;
+    background-color: #efe9e9;
 }
 
 button:hover{
@@ -58,9 +59,10 @@ button:hover{
 }
 
 .cadastro{
-    border-bottom: none;
-    border-right: none;
+    border-bottom: 4px solid black;
     border-left: none;
+    border-right: 4px solid black;
+    border-radius: 10px 0 10px 0;
 }
 
 input::-webkit-outer-spin-button,
@@ -115,4 +117,59 @@ label{
 
 .hidden{
     display: none;
+}
+
+::placeholder{
+    color: black;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+
+.submit{
+    padding: 1rem;
+    width: 10%;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #f1ffa5;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.socialmedia img{
+    margin: 0.2rem 0;
+    transition: transform ease-in-out 0.2s;
+}
+
+.socialmedia img:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+
+.atual{
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: #fff !important;
+}
+
+.terms{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.terms input{
+    width: 5%;
+    margin: 0;
+    align-items: center;
+    margin: 1rem 1rem 1rem 0;
 }
