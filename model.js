@@ -129,28 +129,29 @@ let fingerLookupIndices = {
                 Math.max.apply(null, confidence)
               );
               
+              document.getElementById("content").innerHTML = gesture.gestures[maxConfidence].name;
 
              // console.log(gesture.gestures[maxConfidence].name)
-              var newgest = gesture.gestures[maxConfidence].name;
+             // var newgest = gesture.gestures[maxConfidence].name;
 
-              if(fatorDecisivo[newgest] === fatorDecisivo["teste"]){
-                fatorDecisivo[newgest] = 1;
-              }
-              else{
-                var valor = fatorDecisivo[newgest];
-                fatorDecisivo[newgest] = valor + 1;
-              }
+             // if(fatorDecisivo[newgest] === fatorDecisivo["teste"]){
+             //   fatorDecisivo[newgest] = 1;
+             // }
+             // else{
+             //  var valor = fatorDecisivo[newgest];
+             //   fatorDecisivo[newgest] = valor + 1;
+             // }
               //console.log(fatorDecisivo)
 
              // document.getElementById("content").innerHTML = Letras[newgest]
 
-              setTimeout(() => {
-                clearInterval(timer)
-                console.log('Passou aqui')
-                document.getElementById("content").innerHTML = Object.keys(fatorDecisivo).reduce((a, b) => fatorDecisivo[a] > fatorDecisivo[b] ? a : b)
-              },5000)
+            //  setTimeout(() => {
+            //    clearInterval(timer)
+            //    console.log('Passou aqui')
+            //    document.getElementById("content").innerHTML = Object.keys(fatorDecisivo).reduce((a, b) => fatorDecisivo[a] > fatorDecisivo[b] ? a : b)
+            //  },5000)
 
-              console.log(Object.values(fatorDecisivo).reduce((a, b) => fatorDecisivo[a] > fatorDecisivo[b] ? a : b));
+            //  console.log(Object.values(fatorDecisivo).reduce((a, b) => fatorDecisivo[a] > fatorDecisivo[b] ? a : b));
             }
         }
   }
