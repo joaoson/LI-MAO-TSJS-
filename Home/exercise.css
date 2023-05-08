@@ -1,0 +1,189 @@
+html, body ,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.leftsection, .rightsection{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6B498F;
+    height: 90vh;
+    color: white;
+    border-radius: 10px;
+}
+
+.leftsection a{
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+.links, .links2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    font-size: 1.2rem;
+}
+
+.links{
+    height: 40vh;
+    justify-content: space-evenly;
+}
+
+.links h1{
+    color: #F1FFA5;
+}
+
+.links2{
+    height: 10vh;
+    justify-content: space-evenly;
+}
+
+.center{
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.center h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.center img{
+    height: 30%;
+    border: 5px solid black;
+    border-radius: 600px;
+    padding-right: 0.5rem;
+    margin-top: 2rem;
+}
+
+.vertical{
+    width: 5px;
+    height: 5%;
+    background-color: black;
+    display: flex;
+}
+
+.horizontal{
+    width: 60%;
+    height: 5px;
+    background-color: black;
+}
+
+.lines{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    height: 5%;
+}
+
+.lines .vertical{
+    height: 100%;
+}
+
+.circles{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.circle{
+    width: 30%;
+    height: 100%;
+    border: black 5px solid;
+    border-radius: 600px;
+}
+
+.center p{
+    margin-top: 2rem;
+    width: 80%;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border: solid black 5px;
+    font-size: 1.2rem;
+}
+
+.rightsection{
+    width: 30%;
+    background-color: transparent;
+    color: black;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store ul li{
+    list-style: none;
+    word-spacing: 0.5rem;
+}
+
+.store, .ranking {
+    text-align: center;
+    border: solid 5px black;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.ranking ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+small{
+    font-size: 0.7rem;
+}
+
+.position{
+    font-size: 2rem;
+    padding-right: 0.3rem;
+    font-weight: bold;
+}
+
+.ranking, .store{
+    width: 90%;
+}
+
+.first{
+    color:gold;
+}
+.second{
+    color: silver;
+}
+
+.third{
+    color: rgb(207, 122, 31)
+}
