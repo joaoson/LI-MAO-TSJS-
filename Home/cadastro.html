@@ -18,21 +18,22 @@
             <button id="loginBtn" class="login">Login</button>
         </div>
         <div id="registerDiv" class="register">
-            <form action="" method="post">
+            <form action="" method="post" id="Formulario1">
                 <label for="nome">Digite seu nome completo</label><br>
-                <input type="text" id="nome" name="nome"><br>
+                <input oninvalid="this.setCustomValidity('Preencha seu nome aqui')" required class="letra" type="text" id="nome" name="nome"
+                oninput="this.setCustomValidity('')"><br>
                 <label for="nascimento"> Digite sua data de nascimento</label><br>
-                <input type="number" id="nascimento" name="nascimento" placeholder="DD/MM/YYYY" ><br>
+                <input  oninvalid="this.setCustomValidity('Preencha sua data de nascimento')" required oninput="this.setCustomValidity('')" class="num" type="number" id="nascimento" name="nascimento" placeholder="DD/MM/YYYY" ><br>
                 <label for="cpf"> Digite seu CPF</label><br>
-                <input type="number" id="cpf" name="cpf" placeholder="111.111.111-11"><br>
+                <input  oninvalid="this.setCustomValidity('Preencha seu CPF')" required oninput="this.setCustomValidity('')" class="num" type="number" id="cpf" name="cpf" placeholder="111.111.111-11"><br>
                 <label for="email">Email</label><br>
-                <input type="email" id="email" name="email"><br>
+                <input  oninvalid="this.setCustomValidity('Preencha seu email aqui')" required oninput="this.setCustomValidity('')" class="email" type="email" id="email" name="email"><br>
                 <label for="user">Nome de usuario</label><br>
-                <input type="text" id="user" name="user"><br>
+                <input  oninvalid="this.setCustomValidity('Preencha seu username aqui')" required oninput="this.setCustomValidity('')" class="letra" type="text" id="user" name="user"><br>
                 <label for="senha"> Digite sua senha</label><br>
-                <input type="password" id="senha" name="senha"><br>
+                <input  oninvalid="this.setCustomValidity('Preencha sua senha aqui')" required oninput="this.setCustomValidity('')" class="senha" type="password" id="senha" name="senha"><br>
                 <label for="senhaRep"> Digite sua senha</label><br>
-                <input type="password" id="senhaRep" name="senhaRep"><br>
+                <input  oninvalid="this.setCustomValidity('Preencha sua senha novamente aqui')" required oninput="this.setCustomValidity('')" class="senha" type="password" id="senhaRep" name="senhaRep"><br>
                 <div class="terms">
                     <input type="checkbox">
                     <p>Eu aceito os <a href="./terms.html" target="_blank">termos e condições</a></p>
@@ -42,11 +43,11 @@
             </form>
         </div>
         <div id="loginDiv" class="loginpage hidden">
-            <form action="" method="post">
+            <form action="" method="post" id="Formulario">
                 <label for="emailLog">Digite seu email</label><br>
-                <input type="email" id="emailLog" name="emailLog"><br>
+                <input oninvalid="this.setCustomValidity('Digite seu email aqui')" required  oninput="this.setCustomValidity('')" class="email" type="email" id="emailLog" name="emailLog"><br>
                 <label for="senhaLog"> Digite sua senha</label><br>
-                <input type="password" id="senhaLog" name="senhaLog"><br>
+                <input oninvalid="this.setCustomValidity('Digite sua senha aqui')" required  oninput="this.setCustomValidity('')"class="senha" type="password" id="senhaLog" name="senhaLog"><br>
                 <input type="submit" class="submit" name="submit" value="Logar"><br>
                 <div class="socialmedia">
                     <p>Ou faça login rapidamente com as opções abaixo</p>

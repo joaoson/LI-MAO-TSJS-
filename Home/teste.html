@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./testestyle.css">
+    <title>Teste Alfabeto</title>
+</head>
+<body>
+    <div id="inicial" class="telainicial">
+        <h1>Li-Mao</h1>
+        <h2>Seja bem-vindo(a) sua primeira aula e teste.</h2>
+        <p>Aqui lhe mostraremos alguns dos simbolos mais usados no alfabeto de Libras, entao preste bastante atencao</p>
+        <button onclick="scrollar(inicial)">Comecar</button>
+    </div>
+    <div id="exercise1" class="exercise1">
+        <h2>Conhecendo as letras</h2>
+        <div class="imagens">
+            <img src="./assets/alfabeto-em-libras-para-imprimir-colorido-sinais-parede-sala-de-aula-cartaz-cartazes-letras-todas-abc-alfa-alfabetos-lindos (1).jpg" alt=""><img src="./assets/alfabeto-em-libras-para-imprimir-colorido-sinais-parede-sala-de-aula-cartaz-cartazes-letras-todas-abc-alfa-alfabetos-lindos (2).jpg" alt=""><img src="./assets/alfabeto-em-libras-para-imprimir-colorido-sinais-parede-sala-de-aula-cartaz-cartazes-letras-todas-abc-alfa-alfabetos-lindos (3).jpg" alt=""><img src="./assets/alfabeto-em-libras-para-imprimir-colorido-sinais-parede-sala-de-aula-cartaz-cartazes-letras-todas-abc-alfa-alfabetos-lindos (4).jpg" alt=""><img src="./assets/alfabeto-em-libras-para-imprimir-colorido-sinais-parede-sala-de-aula-cartaz-cartazes-letras-todas-abc-alfa-alfabetos-lindos (5).jpg" alt=""><img src="./assets/alfabeto-em-libras-para-imprimir-colorido-sinais-parede-sala-de-aula-cartaz-cartazes-letras-todas-abc-alfa-alfabetos-lindos (6).jpg" alt="">
+        </div>
+        <p>Aqui podemos ver os sinais representativos de cada letra ate a letra F.
+        </p>
+        <p>Muito legal aprender, nao eh mesmo?</p>
+        <button onclick="scrollar(exercise1)">Quero praticar!</button>
+    </div>
+    <div id="exercise2" class="exercise2">
+        <h2>O que os finais abaixo querem dizer?</h2>
+        <div class="imagens" id="fada">
+            <img src="./assets/alfabeto-em-libras-para-imprimir-colorido-sinais-parede-sala-de-aula-cartaz-cartazes-letras-todas-abc-alfa-alfabetos-lindos (6).jpg" alt=""><img src="./assets/alfabeto-em-libras-para-imprimir-colorido-sinais-parede-sala-de-aula-cartaz-cartazes-letras-todas-abc-alfa-alfabetos-lindos (1).jpg" alt=""><img src="./assets/alfabeto-em-libras-para-imprimir-colorido-sinais-parede-sala-de-aula-cartaz-cartazes-letras-todas-abc-alfa-alfabetos-lindos (4).jpg" alt=""><img src="./assets/alfabeto-em-libras-para-imprimir-colorido-sinais-parede-sala-de-aula-cartaz-cartazes-letras-todas-abc-alfa-alfabetos-lindos (1).jpg" alt="">
+        </div>
+        <p>O que significam os sinais acima?<p>
+        <form action="#">
+            <label for="nome">Digite seu nome completo</label><br>
+            <input id="input1"  type="text" id="nome" name="nome">  
+            <button onclick="checarValor(fada, input1, exercise2)">Checar resposta</button>
+        </form>
+    </div>
+    <script src="./testejs.js"></script>
+</body>
+</html>

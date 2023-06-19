@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+html, body, *{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.telainicial{
+    text-align: center; 
+    transition: all 800ms;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.exercise1, .exercise2{
+    text-align: center; 
+    transition: all 800ms;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sumiu{
+    height: 0;
+    opacity: 0;
+    top: 30px !important;
+    position: absolute !important;
+    z-index: -1;
+}
+
+
+.imagens img{
+    width: 10%;
+}
+
+input{
+    border: none;
+    padding: 1rem 1rem 0 1rem;
+    border-bottom: 2px solid grey;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    outline: none;
+}

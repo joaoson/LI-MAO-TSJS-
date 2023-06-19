@@ -34,6 +34,7 @@ label span{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s; 
+    color: white;
 }
 
 #acordeao label + input[type="radio"]{

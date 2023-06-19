@@ -81,6 +81,7 @@ input{
     border-bottom: 3px black solid;
     margin-bottom: 2rem;
     width: 100%;
+    transition: all 500ms;
 }
 
 input:focus{
@@ -172,4 +173,10 @@ label{
     margin: 0;
     align-items: center;
     margin: 1rem 1rem 1rem 0;
+}
+
+.error{
+    border: 2px red solid;
+    margin-top: 1rem;
+    padding: 0.5rem;
 }
