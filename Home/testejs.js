@@ -3,7 +3,7 @@ function scrollar(parametro){
 }
 
 function checarValor(valor, identificadorInput, identicador){
-    if (identificadorInput.value == valor1){
+    if (identificadorInput.value == valor.id){
         console.log("ok")
         identicador.classList.add("sumiu")
     }
